@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ff9fbe" />
+    <title>JOO5216 | 从这里长出新东西</title>
+    <style>
+      :root {
+        --ink: #401332;
+        --plum: #6b1747;
+        --pink: #ff9fbe;
+        --blush: #fff0f4;
+        --yellow: #ffd847;
+        --red: #f24b5b;
+        --line: rgba(64, 19, 50, .16);
+        --paper: #fff8f8;
+        --shadow: 0 18px 42px rgba(107, 23, 71, .16);
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--paper);
+        font-family: ui-rounded, "Arial Rounded MT Bold", "PingFang SC", "Microsoft YaHei", sans-serif;
+      }
+
+      a { color: inherit; text-decoration: none; }
+      .shell { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 72px;
+        gap: 20px;
+      }
+      .brand { display: flex; align-items: center; gap: 11px; font-weight: 900; letter-spacing: -.05em; }
+      .brand-mark {
+        width: 31px; height: 31px; display: grid; place-items: center;
+        color: var(--plum); background: var(--yellow); border: 2px solid var(--plum);
+        border-radius: 50% 50% 50% 14%; transform: rotate(-12deg); font-size: 17px;
+      }
+      nav { display: flex; gap: 20px; font-size: 14px; font-weight: 800; }
+      nav a:hover { color: var(--red); }
+
+      .hero {
+        position: relative;
+        min-height: 620px;
+        overflow: hidden;
+        border: 2px solid var(--plum);
+        border-radius: 28px;
+        background: var(--pink);
+        box-shadow: var(--shadow);
+      }
+      .hero-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; mix-blend-mode: multiply; opacity: .95; }
+      .hero-copy { position: relative; z-index: 1; width: min(560px, 100%); padding: 80px 56px; }
+      .kicker { display: inline-block; margin-bottom: 18px; padding: 7px 12px; border: 2px solid var(--plum); border-radius: 999px; background: var(--yellow); font-size: 12px; font-weight: 900; }
+      h1 { margin: 0; max-width: 8ch; font-size: clamp(3.6rem, 8vw, 6.7rem); line-height: .9; letter-spacing: -.09em; }
+      .hero-copy p { max-width: 32ch; margin: 26px 0 30px; font-size: 18px; line-height: 1.65; font-weight: 700; }
+      .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+      .button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 19px; border: 2px solid var(--plum); border-radius: 999px; font-weight: 900; transition: transform .2s ease, box-shadow .2s ease; }
+      .button:hover { transform: translateY(-3px) rotate(-1deg); box-shadow: 4px 5px 0 var(--plum); }
+      .button:active { transform: translateY(1px); box-shadow: none; }
+      .button.primary { background: var(--plum); color: #fff; }
+      .button.secondary { background: var(--yellow); }
+
+      section { padding: 100px 0; }
+      .section-title { margin: 0 0 34px; max-width: 12ch; font-size: clamp(2.4rem, 5vw, 4.3rem); line-height: .96; letter-spacing: -.07em; }
+      .intro-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 54px; align-items: start; }
+      .portrait { position: sticky; top: 24px; padding: 18px; border: 2px solid var(--plum); border-radius: 22px; background: var(--yellow); transform: rotate(-3deg); }
+      .portrait img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border: 2px solid var(--plum); border-radius: 14px; filter: saturate(.88) contrast(1.04); }
+      .portrait span { display: block; padding: 14px 4px 0; font-size: 14px; font-weight: 900; }
+      .about { font-size: 22px; line-height: 1.55; font-weight: 700; }
+      .about strong { padding: 0 .12em; background: linear-gradient(transparent 57%, var(--yellow) 57%); }
+
+      .garden { background: var(--blush); border-top: 2px solid var(--plum); border-bottom: 2px solid var(--plum); }
+      .cards { display: grid; grid-template-columns: 1.1fr .9fr 1fr; gap: 17px; }
+      .card { min-height: 280px; padding: 27px; border: 2px solid var(--plum); border-radius: 22px; background: var(--paper); box-shadow: 6px 6px 0 rgba(64, 19, 50, .12); }
+      .card:nth-child(1) { background: var(--yellow); transform: rotate(-1.2deg); }
+      .card:nth-child(2) { background: var(--pink); transform: translateY(35px) rotate(1.2deg); }
+      .card:nth-child(3) { background: #ffc4d9; transform: rotate(-.7deg); }
+      .card small { display: block; margin-bottom: 50px; font-size: 12px; font-weight: 900; letter-spacing: .06em; }
+      .card h3 { margin: 0 0 13px; font-size: 28px; line-height: 1; letter-spacing: -.05em; }
+      .card p { max-width: 23ch; margin: 0; line-height: 1.6; font-weight: 700; }
+      .card .seed { display: inline-grid; place-items: center; width: 38px; height: 38px; margin-top: 23px; border-radius: 50%; background: var(--red); color: #fff; font-size: 21px; }
+
+      .now { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: end; }
+      .now-copy { font-size: 18px; line-height: 1.65; font-weight: 700; }
+      .note { padding: 30px; border: 2px solid var(--plum); border-radius: 20px 5px 20px 5px; background: var(--yellow); box-shadow: 7px 7px 0 var(--plum); transform: rotate(1deg); }
+      .note p { margin: 0; font-size: 24px; line-height: 1.35; font-weight: 900; letter-spacing: -.04em; }
+      .note span { display: block; margin-top: 22px; font-size: 13px; font-weight: 800; }
+
+      footer { padding: 36px 0 50px; border-top: 2px solid var(--plum); }
+      .footer-inner { display: flex; justify-content: space-between; gap: 20px; font-size: 14px; font-weight: 800; }
+      .footer-inner a { color: var(--plum); text-decoration: underline; text-underline-offset: 4px; }
+
+      @media (max-width: 760px) {
+        .shell { width: min(100% - 28px, 1180px); }
+        nav { gap: 12px; font-size: 12px; }
+        nav a:not(:last-child) { display: none; }
+        .hero { min-height: 680px; border-radius: 20px; }
+        .hero-image { object-position: 66% center; opacity: .78; }
+        .hero-copy { padding: 54px 20px; }
+        h1 { max-width: 7ch; font-size: clamp(3rem, 13vw, 4.1rem); line-height: .94; }
+        .hero-copy p { font-size: 16px; }
+        section { padding: 68px 0; }
+        .intro-grid, .now, .cards { grid-template-columns: 1fr; }
+        .portrait { position: relative; top: auto; width: min(290px, 80%); }
+        .card:nth-child(2) { transform: translateY(0) rotate(1deg); }
+        .footer-inner { flex-direction: column; }
+      }
+      @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+    </style>
+  </head>
+  <body>
+    <header class="shell topbar">
+      <a class="brand" href="#top"><span class="brand-mark">J</span><span>JOO5216</span></a>
+      <nav aria-label="页面导航"><a href="#about">关于</a><a href="#garden">花园</a><a href="https://github.com/JOO5216" target="_blank" rel="noreferrer">GitHub</a></nav>
+    </header>
+
+    <main id="top" class="shell">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="assets/hero-garden.png" alt="粉色工作台上盛开的黄色数字花朵" />
+        <div class="hero-copy">
+          <span class="kicker">JOO 的数字花园</span>
+          <h1 id="hero-title">从这里长出新东西。</h1>
+          <p>欢迎来到 JOO5216 的个人角落。代码、灵感和还没命名的实验，都在这里慢慢发芽。</p>
+          <div class="actions"><a class="button primary" href="https://github.com/JOO5216" target="_blank" rel="noreferrer">逛逛 GitHub</a><a class="button secondary" href="#garden">看看花园</a></div>
+        </div>
+      </section>
+
+      <section id="about" class="intro-grid">
+        <div class="portrait"><img src="https://github.com/JOO5216.png?size=460" alt="JOO5216 的 GitHub 头像" /><span>hi, I am JOO</span></div>
+        <div><h2 class="section-title">不急着定义自己。</h2><p class="about">这是一个为<strong>好奇心</strong>预留的位置。还没有公开仓库也没关系，每一个好项目，都是从一颗还没被看见的种子开始。</p><p class="about">你可以把这段换成自己的方向，例如开发、设计、摄影、游戏、研究，或任何真正让你想持续投入的事。</p></div>
+      </section>
+    </main>
+
+    <section id="garden" class="garden"><div class="shell"><h2 class="section-title">花园正在准备开花。</h2><div class="cards"><article class="card"><small>01 / 做点什么</small><h3>正在生长的项目</h3><p>把你的第一个公开仓库放在这里。一个小工具、网站或游戏，都值得有自己的位置。</p><span class="seed">+</span></article><article class="card"><small>02 / 学点什么</small><h3>想弄明白的事</h3><p>记录最近在学习的技术、工具或问题。持续好奇本身就是一种作品。</p><span class="seed">?</span></article><article class="card"><small>03 / 留点痕迹</small><h3>零碎但真实</h3><p>保存灵感、失败的尝试和未完成的念头。它们会在未来连成线。</p><span class="seed">*</span></article></div></div></section>
+
+    <main class="shell"><section class="now"><div><h2 class="section-title">下一件事，从一个仓库开始。</h2><p class="now-copy">这份主页故意没有伪造经历或成绩。等你创建作品后，把三张卡片替换成真实项目，它会自然变成一张真正属于你的名片。</p><a class="button primary" href="https://github.com/new" target="_blank" rel="noreferrer">创建第一个仓库</a></div><aside class="note"><p>不必很厉害才开始。开始了，才会慢慢有自己的形状。</p><span>JOO 的小提醒</span></aside></section></main>
+
+    <footer><div class="shell footer-inner"><span>JOO5216 的数字花园</span><a href="https://github.com/JOO5216" target="_blank" rel="noreferrer">github.com/JOO5216</a></div></footer>
+  </body>
+</html>
