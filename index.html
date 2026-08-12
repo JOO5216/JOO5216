@@ -59,15 +59,15 @@
       .hero {
         position: relative;
         display: grid;
-        grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+        grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
         min-height: min(610px, calc(100dvh - 120px));
         overflow: hidden;
         border-radius: 30px;
         background: var(--pink);
       }
-      .hero-copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: clamp(42px, 7vw, 84px); }
+      .hero-copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: clamp(36px, 4.5vw, 56px); }
       h1, h2, p { margin-top: 0; }
-      h1 { max-width: 6.6ch; margin-bottom: 24px; font-family: "Noto Sans SC", sans-serif; font-size: clamp(3.5rem, 7.3vw, 6.8rem); line-height: 0.94; letter-spacing: -0.075em; }
+      h1 { margin-bottom: 24px; font-family: "Noto Sans SC", sans-serif; font-size: clamp(3rem, 5.4vw, 4.15rem); line-height: 1; letter-spacing: -0.07em; white-space: nowrap; }
       .hero-copy p { max-width: 24ch; margin-bottom: 30px; color: var(--ink-soft); font-size: 17px; line-height: 1.8; font-weight: 700; }
       .button {
         display: inline-flex;
@@ -117,7 +117,7 @@
 
       .intro { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 72px; padding: 120px 0 98px; align-items: start; }
       h2 { font-family: "Noto Sans SC", sans-serif; font-size: clamp(2.35rem, 4.8vw, 4.65rem); line-height: 1; letter-spacing: -0.065em; }
-      .intro h2 { max-width: 5.8ch; margin-bottom: 0; }
+      .intro h2 { margin-bottom: 0; font-size: clamp(2.1rem, 4vw, 3.8rem); white-space: nowrap; }
       .intro-copy { max-width: 560px; padding-top: 12px; color: var(--ink-soft); font-size: 20px; line-height: 1.78; font-weight: 700; }
       .intro-copy strong { color: var(--ink); }
 
@@ -156,11 +156,12 @@
         .shell { width: min(calc(100% - 28px), 1120px); }
         .hero { grid-template-columns: 1fr; min-height: auto; border-radius: 22px; }
         .hero-copy { min-height: 455px; padding: 48px 25px; }
-        h1 { font-size: clamp(3.4rem, 16vw, 5rem); }
+        h1 { font-size: clamp(2.9rem, 13vw, 3.25rem); }
         .hero-art { min-height: 270px; }
         .hero-art::before { top: 18px; right: 18px; width: 53px; height: 53px; }
         .hero-note { right: 15px; bottom: 15px; }
         .intro { grid-template-columns: 1fr; gap: 28px; padding: 78px 0 68px; }
+        .intro h2 { font-size: clamp(2rem, 10vw, 2.6rem); }
         .intro-copy { padding-top: 0; font-size: 18px; }
         .paths { padding-bottom: 78px; }
         .paths-heading { display: block; margin-bottom: 22px; }
@@ -173,7 +174,7 @@
         .path-arrow { width: 32px; height: 32px; font-size: 18px; }
         .closing { padding-bottom: 54px; }
         .closing-inner { display: block; padding: 32px 28px; border-radius: 20px; }
-        .closing h2 { white-space: normal; }
+        .closing h2 { font-size: clamp(1.25rem, 6vw, 1.55rem); white-space: nowrap; }
         .closing a { margin-top: 24px; }
         .footer-inner { flex-direction: column; }
       }
@@ -189,7 +190,7 @@
     <main id="top" class="shell">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <h1 id="hero-title">让好奇心<br />开花</h1>
+          <h1 id="hero-title">让好奇心开花</h1>
           <p><span class="phrase">你好，我是 JOO。</span><span class="phrase">这里收集代码、灵感，</span><span class="phrase">还有每一次刚刚开始的尝试。</span></p>
           <a class="button" href="https://github.com/JOO5216" target="_blank" rel="noreferrer">逛逛我的 GitHub <span>↗</span></a>
         </div>
@@ -200,7 +201,7 @@
       </section>
 
       <section class="intro" aria-labelledby="intro-title">
-        <h2 id="intro-title">不急着，<br />成为谁</h2>
+        <h2 id="intro-title">不着急，成为谁</h2>
         <p class="intro-copy"><span class="phrase">这是一个为<strong>持续探索</strong>留出的角落。</span><span class="phrase">好的作品不一定一开始就很完整，</span><span class="phrase">但每一次认真动手，</span><span class="phrase">都会让它慢慢长出自己的形状</span></p>
       </section>
 
@@ -230,7 +231,7 @@
 
       <section class="closing" aria-labelledby="closing-title">
         <div class="closing-inner">
-          <h2 id="closing-title"><span class="phrase">从这里出发，</span><span class="phrase">去做点新东西。</span></h2>
+          <h2 id="closing-title"><span class="phrase">从这里出发，去做点新东西。</span></h2>
           <a class="button" href="https://github.com/JOO5216" target="_blank" rel="noreferrer">进入 GitHub <span>↗</span></a>
         </div>
       </section>
