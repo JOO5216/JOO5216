@@ -1,4 +1,5 @@
 name: Deploy GitHub Pages
+# Pages is configured in the repository settings to build from GitHub Actions.
 
 on:
   push:
