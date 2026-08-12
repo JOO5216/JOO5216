@@ -3,19 +3,17 @@
     <img src="assets/hero-garden.png" alt="JOO 的粉黄数字花园" width="100%" />
   </a>
 
-  # JOO5216
+  # Hi, I’m JOO
 
-  长出新东西
+  让好奇心开花。
 
-  代码、灵感和还没命名的实验，都在这里慢慢发芽
+  这里收集代码、灵感，还有每一次刚刚开始的尝试。
 
-  <a href="https://joo5216.github.io/JOO5216/">进入 JOO 的数字花园</a>
+  <a href="https://joo5216.github.io/JOO5216/"><b>进入 JOO 的数字花园 →</b></a>
 </div>
 
 <br />
 
-> 不必很厉害才开始。开始了，才会慢慢有自己的形状
-
 <div align="center">
-  <a href="https://github.com/JOO5216">GitHub</a>
+  <sub>从一个小小的念头开始，也很好。</sub>
 </div>

@@ -3,145 +3,239 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#ff9fbe" />
-    <title>JOO5216 | 长出新东西</title>
+    <meta name="theme-color" content="#ffcc44" />
+    <meta name="description" content="JOO5216 的 GitHub 个人主页。" />
+    <title>JOO5216 | 让好奇心开花</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,700&family=Noto+Sans+SC:wght@500;700;900&display=swap" rel="stylesheet" />
     <style>
       :root {
-        --ink: #401332;
-        --plum: #6b1747;
-        --pink: #ff9fbe;
-        --blush: #fff0f4;
-        --yellow: #ffd847;
-        --red: #f24b5b;
-        --line: rgba(64, 19, 50, .16);
-        --paper: #fff8f8;
-        --shadow: 0 18px 42px rgba(107, 23, 71, .16);
+        --ink: #3b1830;
+        --ink-soft: #74425f;
+        --pink: #ffbfd3;
+        --pink-pale: #fff3f7;
+        --yellow: #ffcf48;
+        --yellow-deep: #f5a900;
+        --cream: #fffaf0;
+        --white: #fffdf8;
+        --line: rgba(59, 24, 48, 0.16);
       }
 
       * { box-sizing: border-box; }
       html { scroll-behavior: smooth; }
       body {
         margin: 0;
+        background: var(--cream);
         color: var(--ink);
-        background: var(--paper);
-        font-family: ui-rounded, "Arial Rounded MT Bold", "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-family: "DM Sans", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       }
-
+      ::selection { background: var(--yellow); color: var(--ink); }
+      :focus-visible { outline: 3px solid var(--yellow-deep); outline-offset: 4px; }
       a { color: inherit; text-decoration: none; }
-      .shell { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+      .shell { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
 
       .topbar {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        min-height: 72px;
-        gap: 20px;
+        min-height: 82px;
       }
-      .brand { display: flex; align-items: center; gap: 11px; font-weight: 900; letter-spacing: -.05em; }
+      .brand { display: inline-flex; align-items: center; gap: 9px; font-size: 15px; font-weight: 900; letter-spacing: -0.04em; }
       .brand-mark {
-        width: 31px; height: 31px; display: grid; place-items: center;
-        color: var(--plum); background: var(--yellow); border: 2px solid var(--plum);
-        border-radius: 50% 50% 50% 14%; transform: rotate(-12deg); font-size: 17px;
+        display: grid;
+        place-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50% 50% 50% 9px;
+        background: var(--yellow);
+        font-size: 15px;
+        transform: rotate(-12deg);
       }
-      nav { display: flex; gap: 20px; font-size: 14px; font-weight: 800; }
-      nav a:hover { color: var(--red); }
+      .topbar a:last-child { font-size: 14px; font-weight: 700; }
+      .topbar a:last-child:hover { color: var(--ink-soft); text-decoration: underline; text-underline-offset: 5px; }
 
       .hero {
         position: relative;
-        min-height: 620px;
+        display: grid;
+        grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+        min-height: min(610px, calc(100dvh - 120px));
         overflow: hidden;
-        border: 2px solid var(--plum);
-        border-radius: 28px;
+        border-radius: 30px;
         background: var(--pink);
-        box-shadow: var(--shadow);
       }
-      .hero-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; mix-blend-mode: multiply; opacity: .95; }
-      .hero-copy { position: relative; z-index: 1; width: min(560px, 100%); padding: 80px 56px; }
-      .kicker { display: inline-block; margin-bottom: 18px; padding: 7px 12px; border: 2px solid var(--plum); border-radius: 999px; background: var(--yellow); font-size: 12px; font-weight: 900; }
-      h1 { margin: 0; max-width: 8ch; font-size: clamp(3.6rem, 8vw, 6.7rem); line-height: .9; letter-spacing: -.09em; }
-      .hero-copy p { max-width: 32ch; margin: 26px 0 30px; font-size: 18px; line-height: 1.65; font-weight: 700; }
-      .actions { display: flex; flex-wrap: wrap; gap: 12px; }
-      .button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 19px; border: 2px solid var(--plum); border-radius: 999px; font-weight: 900; transition: transform .2s ease, box-shadow .2s ease; }
-      .button:hover { transform: translateY(-3px) rotate(-1deg); box-shadow: 4px 5px 0 var(--plum); }
-      .button:active { transform: translateY(1px); box-shadow: none; }
-      .button.primary { background: var(--plum); color: #fff; }
-      .button.secondary { background: var(--yellow); }
+      .hero-copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: clamp(42px, 7vw, 84px); }
+      h1, h2, p { margin-top: 0; }
+      h1 { max-width: 6.6ch; margin-bottom: 24px; font-family: "Noto Sans SC", sans-serif; font-size: clamp(3.5rem, 7.3vw, 6.8rem); line-height: 0.94; letter-spacing: -0.075em; }
+      .hero-copy p { max-width: 24ch; margin-bottom: 30px; color: var(--ink-soft); font-size: 17px; line-height: 1.8; font-weight: 700; }
+      .button {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        min-height: 50px;
+        padding: 0 20px;
+        border-radius: 999px;
+        background: var(--ink);
+        color: var(--white);
+        font-size: 14px;
+        font-weight: 700;
+        transition: transform 220ms ease, background 220ms ease;
+      }
+      .button:hover { background: #592240; transform: translateY(-3px); }
+      .button span { display: inline-grid; place-items: center; width: 21px; height: 21px; border-radius: 50%; background: var(--yellow); color: var(--ink); font-size: 16px; line-height: 1; }
+      .hero-art { position: relative; min-height: 390px; }
+      .hero-art::before {
+        position: absolute;
+        z-index: 1;
+        top: 24px;
+        right: 24px;
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        background: var(--yellow);
+        content: "";
+        animation: sun-drift 5s ease-in-out infinite;
+      }
+      .hero-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply; }
+      .hero-note {
+        position: absolute;
+        z-index: 2;
+        right: 26px;
+        bottom: 25px;
+        max-width: 185px;
+        margin: 0;
+        padding: 13px 16px;
+        border-radius: 14px;
+        background: rgba(255, 253, 248, 0.9);
+        color: var(--ink);
+        font-size: 13px;
+        line-height: 1.45;
+        font-weight: 700;
+        transform: rotate(-2deg);
+      }
 
-      section { padding: 100px 0; }
-      .section-title { margin: 0 0 34px; max-width: 12ch; font-size: clamp(2.4rem, 5vw, 4.3rem); line-height: .96; letter-spacing: -.07em; }
-      .intro-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 54px; align-items: start; }
-      .portrait { position: sticky; top: 24px; padding: 18px; border: 2px solid var(--plum); border-radius: 22px; background: var(--yellow); transform: rotate(-3deg); }
-      .portrait img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border: 2px solid var(--plum); border-radius: 14px; filter: saturate(.88) contrast(1.04); }
-      .portrait span { display: block; padding: 14px 4px 0; font-size: 14px; font-weight: 900; }
-      .about { font-size: 22px; line-height: 1.55; font-weight: 700; }
-      .about strong { padding: 0 .12em; background: linear-gradient(transparent 57%, var(--yellow) 57%); }
+      .intro { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 72px; padding: 120px 0 98px; align-items: start; }
+      h2 { font-family: "Noto Sans SC", sans-serif; font-size: clamp(2.35rem, 4.8vw, 4.65rem); line-height: 1; letter-spacing: -0.065em; }
+      .intro h2 { max-width: 5.8ch; margin-bottom: 0; }
+      .intro-copy { max-width: 560px; padding-top: 12px; color: var(--ink-soft); font-size: 20px; line-height: 1.78; font-weight: 700; }
+      .intro-copy strong { color: var(--ink); }
 
-      .garden { background: var(--blush); border-top: 2px solid var(--plum); border-bottom: 2px solid var(--plum); }
-      .cards { display: grid; grid-template-columns: 1.1fr .9fr 1fr; gap: 17px; }
-      .card { min-height: 280px; padding: 27px; border: 2px solid var(--plum); border-radius: 22px; background: var(--paper); box-shadow: 6px 6px 0 rgba(64, 19, 50, .12); }
-      .card:nth-child(1) { background: var(--yellow); transform: rotate(-1.2deg); }
-      .card:nth-child(2) { background: var(--pink); transform: translateY(35px) rotate(1.2deg); }
-      .card:nth-child(3) { background: #ffc4d9; transform: rotate(-.7deg); }
-      .card small { display: block; margin-bottom: 50px; font-size: 12px; font-weight: 900; letter-spacing: .06em; }
-      .card h3 { margin: 0 0 13px; font-size: 28px; line-height: 1; letter-spacing: -.05em; }
-      .card p { max-width: 23ch; margin: 0; line-height: 1.6; font-weight: 700; }
-      .card .seed { display: inline-grid; place-items: center; width: 38px; height: 38px; margin-top: 23px; border-radius: 50%; background: var(--red); color: #fff; font-size: 21px; }
+      .paths { padding: 0 0 120px; }
+      .paths-heading { display: flex; align-items: end; justify-content: space-between; gap: 28px; margin-bottom: 29px; }
+      .paths-heading h2 { margin-bottom: 0; }
+      .paths-heading p { max-width: 25ch; margin-bottom: 6px; color: var(--ink-soft); font-size: 15px; line-height: 1.7; font-weight: 700; }
+      .path-list { border-top: 1px solid var(--line); }
+      .path {
+        display: grid;
+        grid-template-columns: 54px 1fr auto;
+        align-items: center;
+        gap: 24px;
+        min-height: 112px;
+        border-bottom: 1px solid var(--line);
+        transition: padding 220ms ease, background 220ms ease;
+      }
+      .path:hover { padding: 0 17px; background: var(--pink-pale); }
+      .path-symbol { font-size: 31px; line-height: 1; }
+      .path h3 { margin: 0 0 6px; font-size: 21px; letter-spacing: -0.04em; }
+      .path p { margin: 0; color: var(--ink-soft); font-size: 15px; line-height: 1.55; font-weight: 700; }
+      .path-arrow { display: grid; place-items: center; width: 37px; height: 37px; border-radius: 50%; background: var(--yellow); font-size: 22px; transition: transform 220ms ease; }
+      .path:hover .path-arrow { transform: translateX(5px) rotate(-12deg); }
 
-      .now { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: end; }
-      .now-copy { font-size: 18px; line-height: 1.65; font-weight: 700; }
-      .note { padding: 30px; border: 2px solid var(--plum); border-radius: 20px 5px 20px 5px; background: var(--yellow); box-shadow: 7px 7px 0 var(--plum); transform: rotate(1deg); }
-      .note p { margin: 0; font-size: 24px; line-height: 1.35; font-weight: 900; letter-spacing: -.04em; }
-      .note span { display: block; margin-top: 22px; font-size: 13px; font-weight: 800; }
+      .closing { padding: 0 0 75px; }
+      .closing-inner { display: flex; align-items: center; justify-content: space-between; gap: 38px; padding: 44px 48px; border-radius: 24px; background: var(--yellow); }
+      .closing h2 { max-width: 14ch; margin-bottom: 0; font-size: clamp(2rem, 3.8vw, 3.5rem); }
+      .closing a { flex: none; background: var(--ink); }
 
-      footer { padding: 36px 0 50px; border-top: 2px solid var(--plum); }
-      .footer-inner { display: flex; justify-content: space-between; gap: 20px; font-size: 14px; font-weight: 800; }
-      .footer-inner a { color: var(--plum); text-decoration: underline; text-underline-offset: 4px; }
+      footer { padding: 24px 0 38px; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: 13px; font-weight: 700; }
+      .footer-inner { display: flex; justify-content: space-between; gap: 20px; }
+      footer a:hover { color: var(--ink); }
 
+      @keyframes sun-drift { 50% { transform: translate(-11px, 13px) scale(1.07); } }
       @media (max-width: 760px) {
-        .shell { width: min(100% - 28px, 1180px); }
-        nav { gap: 12px; font-size: 12px; }
-        nav a:not(:last-child) { display: none; }
-        .hero { min-height: 680px; border-radius: 20px; }
-        .hero-image { object-position: 66% center; opacity: .78; }
-        .hero-copy { padding: 54px 20px; }
-        h1 { max-width: 7ch; font-size: clamp(3rem, 13vw, 4.1rem); line-height: .94; }
-        .hero-copy p { font-size: 16px; }
-        section { padding: 68px 0; }
-        .intro-grid, .now, .cards { grid-template-columns: 1fr; }
-        .portrait { position: relative; top: auto; width: min(290px, 80%); }
-        .card:nth-child(2) { transform: translateY(0) rotate(1deg); }
+        .shell { width: min(calc(100% - 28px), 1120px); }
+        .hero { grid-template-columns: 1fr; min-height: auto; border-radius: 22px; }
+        .hero-copy { min-height: 455px; padding: 48px 25px; }
+        h1 { font-size: clamp(3.4rem, 16vw, 5rem); }
+        .hero-art { min-height: 270px; }
+        .hero-art::before { top: 18px; right: 18px; width: 53px; height: 53px; }
+        .hero-note { right: 15px; bottom: 15px; }
+        .intro { grid-template-columns: 1fr; gap: 28px; padding: 78px 0 68px; }
+        .intro-copy { padding-top: 0; font-size: 18px; }
+        .paths { padding-bottom: 78px; }
+        .paths-heading { display: block; margin-bottom: 22px; }
+        .paths-heading p { margin-top: 20px; }
+        .path { grid-template-columns: 38px 1fr 34px; gap: 13px; min-height: 105px; }
+        .path:hover { padding: 0 8px; }
+        .path-symbol { font-size: 26px; }
+        .path h3 { font-size: 18px; }
+        .path p { font-size: 13px; }
+        .path-arrow { width: 32px; height: 32px; font-size: 18px; }
+        .closing { padding-bottom: 54px; }
+        .closing-inner { display: block; padding: 32px 28px; border-radius: 20px; }
+        .closing a { margin-top: 24px; }
         .footer-inner { flex-direction: column; }
       }
-      @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+      @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; } }
     </style>
   </head>
   <body>
     <header class="shell topbar">
-      <a class="brand" href="#top"><span class="brand-mark">J</span><span>JOO5216</span></a>
-      <nav aria-label="页面导航"><a href="#about">关于</a><a href="#garden">花园</a><a href="https://github.com/JOO5216" target="_blank" rel="noreferrer">GitHub</a></nav>
+      <a class="brand" href="#top" aria-label="返回顶部"><span class="brand-mark">J</span><span>JOO5216</span></a>
+      <a href="https://github.com/JOO5216" target="_blank" rel="noreferrer">GitHub ↗</a>
     </header>
 
     <main id="top" class="shell">
       <section class="hero" aria-labelledby="hero-title">
-        <img class="hero-image" src="assets/hero-garden.png" alt="粉色工作台上盛开的黄色数字花朵" />
         <div class="hero-copy">
-          <span class="kicker">JOO 的数字花园</span>
-          <h1 id="hero-title">长出新东西</h1>
-          <p>欢迎来到 JOO5216 的个人角落。代码、灵感和还没命名的实验，都在这里慢慢发芽。</p>
-          <div class="actions"><a class="button primary" href="https://github.com/JOO5216" target="_blank" rel="noreferrer">逛逛 GitHub</a><a class="button secondary" href="#garden">看看花园</a></div>
+          <h1 id="hero-title">让好奇心<br />开花。</h1>
+          <p>你好，我是 JOO。这里收集代码、灵感，还有每一次刚刚开始的尝试。</p>
+          <a class="button" href="https://github.com/JOO5216" target="_blank" rel="noreferrer">逛逛我的 GitHub <span>↗</span></a>
+        </div>
+        <div class="hero-art">
+          <img src="assets/hero-garden.png" alt="粉色工作台上盛开的黄色数字花朵" />
+          <p class="hero-note">从一个小小的念头开始，也很好。</p>
         </div>
       </section>
 
-      <section id="about" class="intro-grid">
-        <div class="portrait"><img src="https://github.com/JOO5216.png?size=460" alt="JOO5216 的 GitHub 头像" /><span>hi, I am JOO</span></div>
-        <div><h2 class="section-title">不急着定义自己</h2><p class="about">这是一个为<strong>好奇心</strong>预留的位置。还没有公开仓库也没关系，每一个好项目，都是从一颗还没被看见的种子开始。</p><p class="about">你可以把这段换成自己的方向，例如开发、设计、摄影、游戏、研究，或任何真正让你想持续投入的事。</p></div>
+      <section class="intro" aria-labelledby="intro-title">
+        <h2 id="intro-title">不急着，<br />成为谁。</h2>
+        <p class="intro-copy">这是一个为<strong>持续探索</strong>留出的角落。好的作品不一定一开始就很完整，但每一次认真动手，都会让它慢慢长出自己的形状。</p>
+      </section>
+
+      <section class="paths" aria-labelledby="paths-title">
+        <div class="paths-heading">
+          <h2 id="paths-title">这里会有</h2>
+          <p>暂时不预设方向，让之后真正想分享的东西自然出现。</p>
+        </div>
+        <div class="path-list">
+          <a class="path" href="https://github.com/JOO5216?tab=repositories" target="_blank" rel="noreferrer">
+            <span class="path-symbol" aria-hidden="true">✳</span>
+            <span><h3>正在长大的项目</h3><p>从小工具到大胆实验，都可以从这里被看见。</p></span>
+            <span class="path-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="path" href="https://github.com/JOO5216?tab=overview" target="_blank" rel="noreferrer">
+            <span class="path-symbol" aria-hidden="true">✦</span>
+            <span><h3>认真留下的痕迹</h3><p>灵感、学习和每一段值得记住的过程。</p></span>
+            <span class="path-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="path" href="https://github.com/JOO5216" target="_blank" rel="noreferrer">
+            <span class="path-symbol" aria-hidden="true">☼</span>
+            <span><h3>下一次新的开始</h3><p>也许现在正好是打开一个仓库的时刻。</p></span>
+            <span class="path-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="closing" aria-labelledby="closing-title">
+        <div class="closing-inner">
+          <h2 id="closing-title">从这里出发，去做点新东西。</h2>
+          <a class="button" href="https://github.com/JOO5216" target="_blank" rel="noreferrer">进入 GitHub <span>↗</span></a>
+        </div>
       </section>
     </main>
 
-    <section id="garden" class="garden"><div class="shell"><h2 class="section-title">花园正准备开花</h2><div class="cards"><article class="card"><small>01 / 做点什么</small><h3>正在生长的项目</h3><p>把你的第一个公开仓库放在这里。一个小工具、网站或游戏，都值得有自己的位置。</p><span class="seed">+</span></article><article class="card"><small>02 / 学点什么</small><h3>想弄明白的事</h3><p>记录最近在学习的技术、工具或问题。持续好奇本身就是一种作品。</p><span class="seed">?</span></article><article class="card"><small>03 / 留点痕迹</small><h3>零碎但真实</h3><p>保存灵感、失败的尝试和未完成的念头。它们会在未来连成线。</p><span class="seed">*</span></article></div></div></section>
-
-    <main class="shell"><section class="now"><div><h2 class="section-title">下一件事，从一个仓库开始</h2><p class="now-copy">这份主页故意没有伪造经历或成绩。等你创建作品后，把三张卡片替换成真实项目，它会自然变成一张真正属于你的名片。</p><a class="button primary" href="https://github.com/new" target="_blank" rel="noreferrer">创建第一个仓库</a></div><aside class="note"><p>不必很厉害才开始。开始了，才会慢慢有自己的形状。</p><span>JOO 的小提醒</span></aside></section></main>
-
-    <footer><div class="shell footer-inner"><span>JOO5216 的数字花园</span><a href="https://github.com/JOO5216" target="_blank" rel="noreferrer">github.com/JOO5216</a></div></footer>
+    <footer>
+      <div class="shell footer-inner"><span>JOO5216 的数字花园</span><a href="https://github.com/JOO5216" target="_blank" rel="noreferrer">github.com/JOO5216</a></div>
+    </footer>
   </body>
 </html>
