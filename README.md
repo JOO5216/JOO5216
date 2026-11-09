@@ -135,7 +135,7 @@ Collects TikTok cover images for preliminary screening with **OCR, vision models
 
 ## 🐍 05 / 贡献足迹 · Contributions
 
-把这一年的贡献记录，交给小蛇慢慢吃掉。每天自动更新。
+贪吃，吃contributions！
 
 A snake tracing my contributions over the past year, updated daily.
 
