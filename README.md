@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>JOO<sub>随手记 · Field Notes</sub></h1>
+<p align="center"><strong>JOO · 随手记 · Field Notes</strong></p>
 
 <p>代码、实验，还有一点好奇心<br />Code, experiments, and a little curiosity.</p>
 
@@ -8,7 +8,7 @@
 
 <img src="https://raw.githubusercontent.com/JOO5216/huahua-codex-pet/main/assets/previews/waving.gif" width="88" alt="花花挥手打招呼" />
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=19&duration=3000&pause=1600&color=84965B&center=true&vCenter=true&width=680&height=48&lines=Hi%2C+I%27m+JOO.+Welcome+to+my+workspace.;Exploring+AI%2C+data+and+visual+computing.;Small+tools.+Real+problems.+Work+in+progress.)](https://github.com/JOO5216)
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=19&duration=3000&pause=1600&color=84965B&center=true&vCenter=true&width=680&height=48&lines=Hi%2C+I%27m+JOO.+Welcome+to+my+workspace.;Exploring+AI%2C+data+and+visual+computing.;Small+tools.+Real+problems.+Work+in+progress.)
 
 **管理科学与工程 · Management Science & Engineering**  
 本科管理科背景 → 研究生工科背景  
@@ -132,6 +132,17 @@ Collects TikTok cover images for preliminary screening with **OCR, vision models
 ![花花动作预览](https://raw.githubusercontent.com/JOO5216/huahua-codex-pet/main/assets/previews/action-sheet.png)
 
 </details>
+
+## 🐍 05 / 贡献足迹 · Contributions
+
+把这一年的贡献记录，交给小蛇慢慢吃掉。每天自动更新。
+
+A snake tracing my contributions over the past year, updated daily.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JOO5216/JOO5216/snake-output/github-snake-dark.svg" />
+  <img alt="JOO 的贡献贪吃蛇 / Contribution snake" src="https://raw.githubusercontent.com/JOO5216/JOO5216/snake-output/github-snake.svg" width="100%" />
+</picture>
 
 ---
 
