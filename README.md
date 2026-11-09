@@ -33,7 +33,7 @@ Undergraduate studies in Management → Graduate studies in Engineering
 
 你好，我是 **JOO**，专业是管理科学与工程，本科为管理科背景，研究生为工科背景。主要关注 **AI+、数据治理、数据科学、大数据决策、计算机视觉和数字人**。
 
-最近在做简历填写助手、媒体数据采集和视觉质检工具。我喜欢从具体的问题出发，把想法做成可以使用的小工具。这里记录项目进展、遇到的问题，也放一些因为有趣而做的小东西，比如花花桌宠。
+因为最近值秋招季嘛，所以在做简历填写助手（官网投递自动化！！！）、媒体数据采集和视觉质检工具。我喜欢从具体的问题出发，把想法做成可以使用的小工具。这里记录项目进展、遇到的问题，也放一些因为有趣而做的小东西，比如花花桌宠。（喵喵喵··· ···）
 
 Hi, I'm **JOO**. My field is **Management Science and Engineering**, with an undergraduate background in management and a graduate background in engineering. My interests include **AI applications, data governance, data science, big-data-driven decision-making, computer vision, and digital humans**.
 
