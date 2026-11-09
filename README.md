@@ -31,19 +31,9 @@ Undergraduate studies in Management → Graduate studies in Engineering
 
 ## 🍃 01 / 关于我 · About me
 
-你好，我是 **JOO**，专业是管理科学与工程，本科为管理科背景，研究生为工科背景。主要关注 **AI+、数据治理、数据科学、大数据决策、计算机视觉和数字人**。
+你好，我是 **JOO**，管理科学与工程专业，关注 **AI+、数据治理、数据科学、计算机视觉和数字人**。最近趁秋招做简历填写助手，也在折腾媒体质检和花花桌宠。喵～
 
-因为最近值秋招季嘛，所以在做简历填写助手（官网投递自动化！！！）、媒体数据采集和视觉质检工具。我喜欢从具体的问题出发，把想法做成可以使用的小工具。这里记录项目进展、遇到的问题，也放一些因为有趣而做的小东西，比如花花桌宠。（喵喵喵··· ···）
-
-Hi, I'm **JOO**. My field is **Management Science and Engineering**, with an undergraduate background in management and a graduate background in engineering. My interests include **AI applications, data governance, data science, big-data-driven decision-making, computer vision, and digital humans**.
-
-Recently, I've been working on a résumé assistant, media data collection scripts, and visual quality-checking tools. I enjoy starting with a practical problem and turning an idea into something usable. This space collects my projects, progress, and things I'm still figuring out—with room for playful side projects like Huahua, my desktop companion.
-
-> **☕ 工作台上 / On my desk**  
-> 简历与浏览器自动化 · 媒体数据采集 · 视觉质量检查  
-> Résumé & browser automation · Media data collection · Visual quality checks  
-> **🌱 番外 / Side quest** — 给工作台添一只叫「花花」的桌宠。  
-> A desktop companion named Huahua, just for a little company.
+Hi, I'm **JOO**, studying **Management Science and Engineering**. I'm interested in **AI applications, data governance, data science, computer vision, and digital humans**. Lately, I've been building a résumé assistant for recruitment season, media QC tools, and Huahua, a playful desktop companion.
 
 <a id="02--selected-projects"></a>
 
@@ -59,21 +49,9 @@ Recently, I've been working on a résumé assistant, media data collection scrip
 <img src="https://raw.githubusercontent.com/JOO5216/resume/main/assets/icons/icon-128.png" width="64" alt="简历助手图标" />
 
 
-**把整理简历、对应网页字段和重复填写这几件事，放进一个浏览器侧栏。**
+用本地 AI 整理简历、匹配网页字段，在 Chrome / Edge 侧栏核对后填写，减少重复录入。基于 **Qwen + llama.cpp**；实际网站的填写兼容性仍在验证。
 
-支持从 PDF、DOCX 和 TXT 提取文字，借助 AI 整理简历，再将经历对应到网页字段。填写前可以检查预览、调整来源和勾选范围；最终提交仍由使用者完成。
-
-- **流程：** 文字提取 → 简历草稿 → 字段对应 → 核对后填写。
-- **实现：** Chrome / Edge 扩展，本机 Qwen 模型与 llama.cpp，可处理多段经历和部分复杂控件。
-- **当前进展与范围：** 已有扩展与本机模型流程验证；真实招聘网站做过只读识别，实际填写兼容性仍需逐站验证。
-
-**A browser sidebar for organizing résumés, matching form fields, and reducing repetitive typing.**
-
-The extension extracts text from PDF, DOCX, and TXT files, uses AI to organize résumé information, and maps experience entries to web form fields. Users can review the preview, adjust data sources, and select fields before filling. The final application submission remains manual.
-
-- **Workflow:** Text extraction → Résumé draft → Field mapping → Review and fill.
-- **Implementation:** A Chrome / Edge extension with local Qwen inference through llama.cpp, supporting multiple experience entries and selected complex controls.
-- **Current scope:** The extension and local-model workflow have been tested. Checks on real recruitment sites have been read-only; actual filling compatibility still needs site-by-site validation.
+A **Chrome / Edge extension** that uses **Qwen + llama.cpp** locally to organize résumés and map form fields for review before filling. Compatibility with real recruitment forms is still being validated.
 
 <details>
 <summary>查看功能流程 / Inside the project</summary>
@@ -90,21 +68,9 @@ The extension extracts text from PDF, DOCX, and TXT files, uses AI to organize r
 ![VLM](https://img.shields.io/badge/VLM-816C9D?style=flat)
 ![Data Quality](https://img.shields.io/badge/Data_Quality-A95A4A?style=flat)
 
-**采集之后，继续检查素材的规格，以及画面里需要留意的内容。**
+采集 TikTok 封面，用 **OCR、视觉模型和人脸检测**做初筛，并通过 **FFmpeg** 检查本地视频规格。结果辅助人工复核，抽样通过不代表全片合格。
 
-从 TikTok 博主发现与封面采集出发，结合人脸检测、OCR 和视觉语言模型做图片初筛；本地视频工具则检查编码、尺寸、帧率、时长和抽样帧中的人脸尺寸。
-
-- **流程：** 内容发现 → 封面采集 → 图片初筛；另提供本地视频检查入口。
-- **实现：** Python、Playwright、FFmpeg / FFprobe、InsightFace、YuNet、SmolVLM。
-- **当前进展与范围：** 机器初筛辅助人工检查；抽样通过不代表全片合格。目前不包含 Instagram / YouTube 专用采集器。
-
-**After collection, check media specifications and flag visual details that need a closer look.**
-
-The toolkit covers TikTok creator discovery and cover-image collection, with face detection, OCR, and a vision-language model for preliminary image screening. Separate local-video tools inspect codecs, dimensions, frame rates, duration, and face sizes in sampled frames.
-
-- **Workflow:** Content discovery → Cover collection → Image screening, with separate entry points for local-video checks.
-- **Implementation:** Python, Playwright, FFmpeg / FFprobe, InsightFace, YuNet, and SmolVLM.
-- **Current scope:** Automated screening supports human review. Passing sampled-frame checks does not establish that an entire video meets requirements. There are currently no dedicated Instagram or YouTube collectors.
+Collects TikTok cover images for preliminary screening with **OCR, vision models, and face detection**, and checks local-video specifications with **FFmpeg**. Results support human review; passing sampled checks does not establish full-video quality.
 
 <a id="03--toolbox"></a>
 
@@ -156,13 +122,9 @@ The toolkit covers TikTok creator discovery and cover-image collection, with fac
 
 <p align="center"><sub>☕ 陪伴 / Just here &nbsp; · &nbsp; 🔎 检查 / Reviewing &nbsp; · &nbsp; ✨ 小小进展 / Little wins</sub></p>
 
-工作台上也留一点好玩的东西。
+**花花**是一只会眨眼、挥手、跟着鼠标看过来的 Codex 桌宠，陪我工作，也负责可爱。
 
-花花是一只 Codex 动画桌宠，会眨眼、跑动、挥手，也会在等待输入、执行任务和检查结果时切换动作。她还会跟着鼠标转动视线。
-
-A little room on the desk for something playful.
-
-Huahua is an animated Codex desktop companion. She blinks, runs, waves, and changes her actions while waiting for input, executing tasks, or reviewing results. Her gaze also follows the mouse pointer.
+**Huahua** is a Codex desktop companion who blinks, waves, and follows the cursor with her gaze—a little company while I work.
 
 <details>
 <summary>展开动作预览 / Meet Huahua</summary>
