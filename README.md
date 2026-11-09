@@ -1,8 +1,8 @@
 <div align="center">
 
-<h1>JOO <sub>随手记 · Field Notes</sub></h1>
+<h1>JOO<sub>随手记 · Field Notes</sub></h1>
 
-<p>代码、实验，还有一点好奇心。<br />Code, experiments, and a little curiosity.</p>
+<p>代码、实验，还有一点好奇心<br />Code, experiments, and a little curiosity.</p>
 
 <br />
 
@@ -31,13 +31,9 @@ Undergraduate studies in Management → Graduate studies in Engineering
 
 ## 🍃 01 / 关于我 · About me
 
-**中文 / Chinese**
-
 你好，我是 **JOO**，专业是管理科学与工程，本科为管理科背景，研究生为工科背景。主要关注 **AI+、数据治理、数据科学、大数据决策、计算机视觉和数字人**。
 
 最近在做简历填写助手、媒体数据采集和视觉质检工具。我喜欢从具体的问题出发，把想法做成可以使用的小工具。这里记录项目进展、遇到的问题，也放一些因为有趣而做的小东西，比如花花桌宠。
-
-**英文 / English**
 
 Hi, I'm **JOO**. My field is **Management Science and Engineering**, with an undergraduate background in management and a graduate background in engineering. My interests include **AI applications, data governance, data science, big-data-driven decision-making, computer vision, and digital humans**.
 
@@ -62,7 +58,6 @@ Recently, I've been working on a résumé assistant, media data collection scrip
 
 <img src="https://raw.githubusercontent.com/JOO5216/resume/main/assets/icons/icon-128.png" width="64" alt="简历助手图标" />
 
-**中文**
 
 **把整理简历、对应网页字段和重复填写这几件事，放进一个浏览器侧栏。**
 
@@ -71,8 +66,6 @@ Recently, I've been working on a résumé assistant, media data collection scrip
 - **流程：** 文字提取 → 简历草稿 → 字段对应 → 核对后填写。
 - **实现：** Chrome / Edge 扩展，本机 Qwen 模型与 llama.cpp，可处理多段经历和部分复杂控件。
 - **当前进展与范围：** 已有扩展与本机模型流程验证；真实招聘网站做过只读识别，实际填写兼容性仍需逐站验证。
-
-**English**
 
 **A browser sidebar for organizing résumés, matching form fields, and reducing repetitive typing.**
 
@@ -97,8 +90,6 @@ The extension extracts text from PDF, DOCX, and TXT files, uses AI to organize r
 ![VLM](https://img.shields.io/badge/VLM-816C9D?style=flat)
 ![Data Quality](https://img.shields.io/badge/Data_Quality-A95A4A?style=flat)
 
-**中文**
-
 **采集之后，继续检查素材的规格，以及画面里需要留意的内容。**
 
 从 TikTok 博主发现与封面采集出发，结合人脸检测、OCR 和视觉语言模型做图片初筛；本地视频工具则检查编码、尺寸、帧率、时长和抽样帧中的人脸尺寸。
@@ -106,8 +97,6 @@ The extension extracts text from PDF, DOCX, and TXT files, uses AI to organize r
 - **流程：** 内容发现 → 封面采集 → 图片初筛；另提供本地视频检查入口。
 - **实现：** Python、Playwright、FFmpeg / FFprobe、InsightFace、YuNet、SmolVLM。
 - **当前进展与范围：** 机器初筛辅助人工检查；抽样通过不代表全片合格。目前不包含 Instagram / YouTube 专用采集器。
-
-**English**
 
 **After collection, check media specifications and flag visual details that need a closer look.**
 
@@ -167,13 +156,9 @@ The toolkit covers TikTok creator discovery and cover-image collection, with fac
 
 <p align="center"><sub>☕ 陪伴 / Just here &nbsp; · &nbsp; 🔎 检查 / Reviewing &nbsp; · &nbsp; ✨ 小小进展 / Little wins</sub></p>
 
-**中文**
-
 工作台上也留一点好玩的东西。
 
 花花是一只 Codex 动画桌宠，会眨眼、跑动、挥手，也会在等待输入、执行任务和检查结果时切换动作。她还会跟着鼠标转动视线。
-
-**English**
 
 A little room on the desk for something playful.
 
@@ -190,7 +175,7 @@ Huahua is an animated Codex desktop companion. She blinks, runs, waves, and chan
 
 <div align="center">
 
-**继续探索，继续动手。**  
+**继续探索，继续动手**  
 有些问题还没解决，有些想法刚刚开始。
 
 **Still exploring. Still building.**  
