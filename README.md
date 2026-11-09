@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:283024,55:4B5320,100:708238&height=210&text=JOO&fontSize=76&fontColor=F2F0E6&fontAlignY=43&desc=FIELD%20NOTES%20%2F%20CODE%20%2F%20EXPERIMENTS&descSize=14&descAlignY=70&animation=fadeIn" width="100%" alt="JOO — Field Notes / Code / Experiments" />
+<h1>JOO <sub>随手记 · Field Notes</sub></h1>
+
+<p>代码、实验，还有一点好奇心。<br />Code, experiments, and a little curiosity.</p>
 
 <br />
 
@@ -12,17 +14,16 @@
 本科管理科背景 → 研究生工科背景  
 Undergraduate studies in Management → Graduate studies in Engineering
 
-![AI+](https://img.shields.io/badge/AI%2B-557C93?style=for-the-badge)
-![Data Governance](https://img.shields.io/badge/Data_Governance-A77A35?style=for-the-badge)
-![Data Science](https://img.shields.io/badge/Data_Science-827099?style=for-the-badge)
-![Big Data Decision Making](https://img.shields.io/badge/Big_Data_Decision_Making-A15F52?style=for-the-badge)
-![Computer Vision](https://img.shields.io/badge/Computer_Vision-477E78?style=for-the-badge)
-![Digital Humans](https://img.shields.io/badge/Digital_Humans-708238?style=for-the-badge)
+![AI+](https://img.shields.io/badge/AI%2B-4F7E99?style=flat)
+![Data Governance](https://img.shields.io/badge/Data_Governance-B27C2A?style=flat)
+![Data Science](https://img.shields.io/badge/Data_Science-816C9D?style=flat)
+![Computer Vision](https://img.shields.io/badge/Computer_Vision-42847C?style=flat)
+![Digital Humans](https://img.shields.io/badge/Digital_Humans-748931?style=flat)
 
-[![Projects](https://img.shields.io/badge/EXPLORE-Projects-557C93?style=flat-square&labelColor=283024)](#02--selected-projects)
-[![Toolbox](https://img.shields.io/badge/OPEN-Toolbox-A77A35?style=flat-square&labelColor=283024)](#03--toolbox)
-[![Digital Garden](https://img.shields.io/badge/VISIT-Digital_Garden-827099?style=flat-square&labelColor=283024)](https://joo5216.github.io/JOO5216/)
-[![GitHub](https://img.shields.io/badge/FIND_ME-GitHub-708238?style=flat-square&labelColor=283024&logo=github)](https://github.com/JOO5216)
+[![Projects](https://img.shields.io/badge/EXPLORE-Projects-4F7E99?style=flat&labelColor=283024)](#02--selected-projects)
+[![Toolbox](https://img.shields.io/badge/OPEN-Toolbox-B27C2A?style=flat&labelColor=283024)](#03--toolbox)
+[![Digital Garden](https://img.shields.io/badge/VISIT-Digital_Garden-816C9D?style=flat&labelColor=283024)](https://joo5216.github.io/JOO5216/)
+[![GitHub](https://img.shields.io/badge/FIND_ME-GitHub-748931?style=flat&labelColor=283024&logo=github)](https://github.com/JOO5216)
 
 </div>
 
@@ -54,10 +55,10 @@ Recently, I've been working on a résumé assistant, media data collection scrip
 
 ### 📝 01 — 简历填写助手 / Resume Copilot
 
-[![Repository](https://img.shields.io/badge/VIEW_REPO-resume-4B5320?style=for-the-badge&logo=github&labelColor=283024)](https://github.com/JOO5216/resume)
-![Browser Extension](https://img.shields.io/badge/Browser_Extension-A15F52?style=flat-square)
-![Local LLM](https://img.shields.io/badge/Local_LLM-477E78?style=flat-square)
-![Human in the Loop](https://img.shields.io/badge/Human_in_the_Loop-708238?style=flat-square)
+[![Repository](https://img.shields.io/badge/VIEW_REPO-resume-4F581B?style=flat&logo=github&labelColor=283024)](https://github.com/JOO5216/resume)
+![Browser Extension](https://img.shields.io/badge/Browser_Extension-A95A4A?style=flat)
+![Local LLM](https://img.shields.io/badge/Local_LLM-42847C?style=flat)
+![Human in the Loop](https://img.shields.io/badge/Human_in_the_Loop-748931?style=flat)
 
 <img src="https://raw.githubusercontent.com/JOO5216/resume/main/assets/icons/icon-128.png" width="64" alt="简历助手图标" />
 
@@ -90,11 +91,11 @@ The extension extracts text from PDF, DOCX, and TXT files, uses AI to organize r
 
 ### 🔍 02 — 媒体采集与视觉质检 / Visual Data QC
 
-[![Repository](https://img.shields.io/badge/VIEW_REPO-media--cv--qc-4B5320?style=for-the-badge&logo=github&labelColor=283024)](https://github.com/JOO5216/tt-ins-yt-media-cv-qc)
-![Computer Vision](https://img.shields.io/badge/Computer_Vision-557C93?style=flat-square)
-![OCR](https://img.shields.io/badge/OCR-A77A35?style=flat-square)
-![VLM](https://img.shields.io/badge/VLM-827099?style=flat-square)
-![Data Quality](https://img.shields.io/badge/Data_Quality-A15F52?style=flat-square)
+[![Repository](https://img.shields.io/badge/VIEW_REPO-media--cv--qc-4F581B?style=flat&logo=github&labelColor=283024)](https://github.com/JOO5216/tt-ins-yt-media-cv-qc)
+![Computer Vision](https://img.shields.io/badge/Computer_Vision-4F7E99?style=flat)
+![OCR](https://img.shields.io/badge/OCR-B27C2A?style=flat)
+![VLM](https://img.shields.io/badge/VLM-816C9D?style=flat)
+![Data Quality](https://img.shields.io/badge/Data_Quality-A95A4A?style=flat)
 
 **中文**
 
@@ -116,34 +117,6 @@ The toolkit covers TikTok creator discovery and cover-image collection, with fac
 - **Implementation:** Python, Playwright, FFmpeg / FFprobe, InsightFace, YuNet, and SmolVLM.
 - **Current scope:** Automated screening supports human review. Passing sampled-frame checks does not establish that an entire video meets requirements. There are currently no dedicated Instagram or YouTube collectors.
 
-### 🗂️ 03 — TikTok 数据采集工具 / Data Collection
-
-[![Repository](https://img.shields.io/badge/VIEW_REPO-url--crawler-4B5320?style=for-the-badge&logo=github&labelColor=283024)](https://github.com/JOO5216/tt-ins-url-crawler)
-![Python](https://img.shields.io/badge/Python-477E78?style=flat-square)
-![Playwright](https://img.shields.io/badge/Playwright-708238?style=flat-square)
-![SQLite](https://img.shields.io/badge/SQLite-557C93?style=flat-square)
-![Deduplication](https://img.shields.io/badge/Deduplication-A77A35?style=flat-square)
-
-**中文**
-
-**把标签、音乐页里的内容线索，整理成可以继续处理的数据。**
-
-收录五个脚本，用于发现视频链接、博主账号和主页。支持不同采集路径，以及部分脚本的去重、断点续抓和表格导出。
-
-- **输入 → 输出：** 标签 / 音乐页 → 视频与账号记录 → CSV、XLSX 或 SQLite。
-- **实现：** 第三方 TikWM 接口与 Playwright 浏览器采集。
-- **当前进展与范围：** 以 TikTok 为主；接口限流和页面变化会影响结果，采集数量不代表平台全部内容。
-
-**English**
-
-**Turn leads from hashtags and music pages into structured records for further work.**
-
-Five scripts discover video URLs, creator accounts, and profile pages through different collection routes. Selected scripts support deduplication, checkpoint-based resumption, and spreadsheet export.
-
-- **Inputs → Outputs:** Hashtags / Music pages → Video and account records → CSV, XLSX, or SQLite.
-- **Implementation:** The third-party TikWM API and Playwright-based browser collection.
-- **Current scope:** Focused on TikTok. Rate limits and page changes can affect results; collected records do not represent all content available on the platform.
-
 <a id="03--toolbox"></a>
 
 ## 🧰 03 / 技术工具箱 · Toolbox
@@ -154,37 +127,37 @@ Five scripts discover video URLs, creator accounts, and profile pages through di
 
 **💻 项目里的语言与存储 / Languages & Storage**
 
-![Python](https://img.shields.io/badge/Python-827099?style=for-the-badge&logo=python&logoColor=F2F0E6)
-![JavaScript](https://img.shields.io/badge/JavaScript-A15F52?style=for-the-badge&logo=javascript&logoColor=F2F0E6)
-![HTML](https://img.shields.io/badge/HTML-477E78?style=for-the-badge&logo=html5&logoColor=F2F0E6)
-![CSS](https://img.shields.io/badge/CSS-708238?style=for-the-badge&logo=css&logoColor=F2F0E6)
-![SQLite](https://img.shields.io/badge/SQLite-557C93?style=for-the-badge&logo=sqlite&logoColor=F2F0E6)
+![Python](https://img.shields.io/badge/Python-816C9D?style=flat&logo=python&logoColor=F2F0E6)
+![JavaScript](https://img.shields.io/badge/JavaScript-A95A4A?style=flat&logo=javascript&logoColor=F2F0E6)
+![HTML](https://img.shields.io/badge/HTML-42847C?style=flat&logo=html5&logoColor=F2F0E6)
+![CSS](https://img.shields.io/badge/CSS-748931?style=flat&logo=css&logoColor=F2F0E6)
+![SQLite](https://img.shields.io/badge/SQLite-4F7E99?style=flat&logo=sqlite&logoColor=F2F0E6)
 
 **🧠 模型与视觉工具 / AI & Visual Computing**
 
-![Qwen](https://img.shields.io/badge/Qwen-A77A35?style=for-the-badge)
-![llama.cpp](https://img.shields.io/badge/llama.cpp-827099?style=for-the-badge)
-![SmolVLM](https://img.shields.io/badge/SmolVLM-A15F52?style=for-the-badge)
-![InsightFace](https://img.shields.io/badge/InsightFace-477E78?style=for-the-badge)
-![YuNet](https://img.shields.io/badge/YuNet-708238?style=for-the-badge)
-![OCR](https://img.shields.io/badge/OCR-557C93?style=for-the-badge)
+![Qwen](https://img.shields.io/badge/Qwen-B27C2A?style=flat)
+![llama.cpp](https://img.shields.io/badge/llama.cpp-816C9D?style=flat)
+![SmolVLM](https://img.shields.io/badge/SmolVLM-A95A4A?style=flat)
+![InsightFace](https://img.shields.io/badge/InsightFace-42847C?style=flat)
+![YuNet](https://img.shields.io/badge/YuNet-748931?style=flat)
+![OCR](https://img.shields.io/badge/OCR-4F7E99?style=flat)
 
 **⚙️ 自动化与媒体处理 / Automation & Media**
 
-![Playwright](https://img.shields.io/badge/Playwright-A77A35?style=for-the-badge)
-![Chrome Extensions](https://img.shields.io/badge/Chrome_Extensions-827099?style=for-the-badge&logo=googlechrome&logoColor=F2F0E6)
-![FFmpeg](https://img.shields.io/badge/FFmpeg-A15F52?style=for-the-badge&logo=ffmpeg&logoColor=F2F0E6)
-![Git](https://img.shields.io/badge/Git-477E78?style=for-the-badge&logo=git&logoColor=F2F0E6)
-![PowerShell](https://img.shields.io/badge/PowerShell-708238?style=for-the-badge)
-![Codex](https://img.shields.io/badge/Codex-557C93?style=for-the-badge)
+![Playwright](https://img.shields.io/badge/Playwright-B27C2A?style=flat)
+![Chrome Extensions](https://img.shields.io/badge/Chrome_Extensions-816C9D?style=flat&logo=googlechrome&logoColor=F2F0E6)
+![FFmpeg](https://img.shields.io/badge/FFmpeg-A95A4A?style=flat&logo=ffmpeg&logoColor=F2F0E6)
+![Git](https://img.shields.io/badge/Git-42847C?style=flat&logo=git&logoColor=F2F0E6)
+![PowerShell](https://img.shields.io/badge/PowerShell-748931?style=flat)
+![Codex](https://img.shields.io/badge/Codex-4F7E99?style=flat)
 
 <sub>这里列的是现有项目涉及的技术和工具；上方的方向标签则是我关注和探索的领域。<br />These are technologies and tools used in the existing projects. The direction badges above describe my areas of interest and exploration.</sub>
 
 ## 🌼 04 / 番外：花花 · Side quest: Huahua
 
-[![Huahua](https://img.shields.io/badge/MEET-HUAHUA-A77A35?style=for-the-badge&labelColor=283024)](https://github.com/JOO5216/huahua-codex-pet)
-![Creative Coding](https://img.shields.io/badge/Creative_Coding-827099?style=flat-square)
-![Sprite Animation](https://img.shields.io/badge/Sprite_Animation-A15F52?style=flat-square)
+[![Huahua](https://img.shields.io/badge/MEET-HUAHUA-B27C2A?style=flat&labelColor=283024)](https://github.com/JOO5216/huahua-codex-pet)
+![Creative Coding](https://img.shields.io/badge/Creative_Coding-816C9D?style=flat)
+![Sprite Animation](https://img.shields.io/badge/Sprite_Animation-A95A4A?style=flat)
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/JOO5216/huahua-codex-pet/main/assets/previews/idle.gif" width="112" alt="花花：待机" />
@@ -223,8 +196,8 @@ Huahua is an animated Codex desktop companion. She blinks, runs, waves, and chan
 **Still exploring. Still building.**  
 Some questions remain open. Some ideas are just getting started.
 
-[![All Projects](https://img.shields.io/badge/ALL_PROJECTS-JOO5216-4B5320?style=for-the-badge&logo=github&labelColor=283024)](https://github.com/JOO5216?tab=repositories)
-[![Garden](https://img.shields.io/badge/PERSONAL_SPACE-Digital_Garden-708238?style=for-the-badge&labelColor=283024)](https://joo5216.github.io/JOO5216/)
+[![All Projects](https://img.shields.io/badge/ALL_PROJECTS-JOO5216-4F581B?style=flat&logo=github&labelColor=283024)](https://github.com/JOO5216?tab=repositories)
+[![Garden](https://img.shields.io/badge/PERSONAL_SPACE-Digital_Garden-748931?style=flat&labelColor=283024)](https://joo5216.github.io/JOO5216/)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:283024,55:4B5320,100:708238&height=100&section=footer&animation=twinkling" width="100%" alt="Olive green footer" />
 
