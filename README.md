@@ -31,7 +31,7 @@ Undergraduate studies in Management → Graduate studies in Engineering
 
 ## 🍃 01 / 关于我 · About me
 
-你好，我是 **JOO**，管理科学与工程专业，关注 **AI+、数据治理、数据科学、计算机视觉和数字人**。最近趁秋招做简历填写助手，也在折腾媒体质检和花花桌宠。喵～
+你好，我是 **JOO**，管理科学与工程专业，关注 **AI+、数据治理、数据科学、计算机视觉和数字人**。最近趁秋招做简历填写助手，也在折腾媒体质检数据开发。喵喵喵～
 
 Hi, I'm **JOO**, studying **Management Science and Engineering**. I'm interested in **AI applications, data governance, data science, computer vision, and digital humans**. Lately, I've been building a résumé assistant for recruitment season, media QC tools, and Huahua, a playful desktop companion.
 
@@ -122,7 +122,7 @@ Collects TikTok cover images for preliminary screening with **OCR, vision models
 
 <p align="center"><sub>☕ 陪伴 / Just here &nbsp; · &nbsp; 🔎 检查 / Reviewing &nbsp; · &nbsp; ✨ 小小进展 / Little wins</sub></p>
 
-**花花**是一只会眨眼、挥手、跟着鼠标看过来的 Codex 桌宠，陪我工作，也负责可爱。
+**花花**是一只会眨眼、挥手、跟着鼠标看过来的 Codex 桌宠，主打陪伴！！！（你怎么知道我朋友给我买了一端比奇堡盲盒且开出来第一个就是美美鱼！！！）
 
 **Huahua** is a Codex desktop companion who blinks, waves, and follows the cursor with her gaze—a little company while I work.
 
@@ -138,7 +138,8 @@ Collects TikTok cover images for preliminary screening with **OCR, vision models
 <div align="center">
 
 **继续探索，继续动手**  
-有些问题还没解决，有些想法刚刚开始。
+
+大大方方去丢脸，兴致勃勃去失败。再昂首挺胸重新开始
 
 **Still exploring. Still building.**  
 Some questions remain open. Some ideas are just getting started.
