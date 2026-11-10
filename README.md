@@ -1,6 +1,6 @@
 <div align="center">
 
-<p align="center"><img src="https://capsule-render.vercel.app/api?type=transparent&height=80&text=JOO%20%C2%B7%20%E9%9A%8F%E6%89%8B%E8%AE%B0%20%C2%B7%20Field%20Notes&fontSize=40&fontColor=4B5320&fontAlignY=55" alt="JOO · 随手记 · Field Notes" width="100%" /></p>
+<p align="center"><img src="https://capsule-render.vercel.app/api?type=transparent&height=80&text=JOO%20%C2%B7%20%E9%9A%8F%E6%89%8B%E8%AE%B0%20%C2%B7%20Field%20Notes&fontSize=40&fontColor=4B5320&fontAlignY=55" alt="JOO · Field Notes" width="100%" /></p>
 
 <p>代码、实验，还有一点好奇心<br />Code, experiments, and a little curiosity.</p>
 
