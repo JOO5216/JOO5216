@@ -27,6 +27,20 @@ Undergraduate studies in Management → Graduate studies in Engineering
 
 </div>
 
+<!-- field-notes-website:start -->
+<div align="center">
+
+### 个人作品集 · JOO / FIELD NOTES
+
+项目、科研与交互实验的可探索档案。
+
+[GitHub Pages · 访问作品集](https://jiaoruotong101-svg.github.io/joo-field-notes/) &nbsp; · &nbsp; [Vercel · 备用入口](https://joo-field-notes.vercel.app)
+
+[查看网站源码](https://github.com/jiaoruotong101-svg/joo-field-notes)
+
+</div>
+<!-- field-notes-website:end -->
+
 ---
 
 ## 🍃 01 / 关于我 · About me
